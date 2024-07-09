@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg1iec6kp7ehp"]
+
+[sub_resource type="GDScript" id="GDScript_qjsqe"]
+script/source = "extends Button
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+func _on_pressed():
+	get_tree().change_scene_to_file(\"res://Scenes/Basement.tscn\")
+"
+
+[sub_resource type="GDScript" id="GDScript_7si4j"]
+script/source = "extends Button
+
+func _on_pressed():
+	get_tree().quit()
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_0wkek"]
+font_size = 8
+font_color = Color(0.443137, 0.458824, 0.494118, 1)
+
+[node name="Control" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 6.0
+offset_top = -69.0
+offset_right = 202.0
+offset_bottom = -5.0
+grow_vertical = 2
+
+[node name="Старт" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 10
+text = "Играть"
+flat = true
+script = SubResource("GDScript_qjsqe")
+metadata/_edit_use_anchors_ = true
+
+[node name="Выйти" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 10
+text = "Выйти"
+flat = true
+script = SubResource("GDScript_7si4j")
+metadata/_edit_use_anchors_ = true
+
+[node name="Info" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "\"God's genome\" build pre alpha version tech demo"
+label_settings = SubResource("LabelSettings_0wkek")
+
+[connection signal="pressed" from="VBoxContainer/Старт" to="VBoxContainer/Старт" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/Выйти" to="VBoxContainer/Выйти" method="_on_pressed"]

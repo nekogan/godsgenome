@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://2c4t2507cea"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_veee6"]
+radius = 6.0
+
+[node name="HurtBox" type="Area2D"]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_veee6")
+debug_color = Color(0.818199, 0.346522, 0.537959, 0.572549)

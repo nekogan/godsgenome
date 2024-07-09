@@ -1,0 +1,14 @@
+CollisionShape2D
+Area2D
+RayCast2D
+CollisionPolygon2D
+Label
+Camera2D
+PointLight2D
+DirectionalLight2D
+TileMap
+CanvasLayer
+VBoxContainer
+Control
+TextureRect
+HBoxContainer

@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj1uoriuvabs"]
+
+[ext_resource type="Texture2D" uid="uid://x7s4w24jr036" path="res://Gameplay/Door/doors.png" id="1_f0obk"]
+[ext_resource type="Script" path="res://SaveZone/door_to_save.gd" id="1_rqgx6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_acyej"]
+atlas = ExtResource("1_f0obk")
+region = Rect2(350.848, 223.45, 29.8354, 48.9533)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e8bbv"]
+size = Vector2(14, 24)
+
+[node name="DoorToSave" type="Area2D"]
+z_index = -1
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("1_rqgx6")
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.534483, 0.534483)
+texture = SubResource("AtlasTexture_acyej")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_e8bbv")
+
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(0, 3)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -25.0
+offset_right = 20.0
+offset_bottom = -2.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

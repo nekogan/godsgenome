@@ -1,0 +1,13 @@
+res://Enemy/enemy.tscn::ee199049e8aeda88d9c2bde9bdb47319::1710259871::res://.godot/exported/133200997/export-fd710a71c2d2ebe52136e62dc9922fbe-enemy.scn
+res://Gameplay/Checkpoint/check_point.tscn::34b91962ed77802494d34b18dd447af6::1709662034::res://.godot/exported/133200997/export-7c690d4e9339713db329975b26541fb8-check_point.scn
+res://Gameplay/Door/door.tscn::b497aa126e56756086c47158126d561b::1710315854::res://.godot/exported/133200997/export-f69399637565e97cc1e4d6668b08d3d8-door.scn
+res://Gameplay/FogOfWar/Fog_area.tscn::558b10b1c077f2b5a122e917ae053289::1710011328::res://.godot/exported/133200997/export-8f5e352ffdaee42de6faea6b637e5231-Fog_area.scn
+res://GUI/Tscn's/main_menu.tscn::23204c5e14124d4e27688d89fbbdffac::1710315867::res://.godot/exported/133200997/export-8ff73bdc871c691efaace0f13424d336-main_menu.scn
+res://GUI/Tscn's/menu.tscn::be805e1b80e2fceeae31f21e5dc137d9::1710250453::res://.godot/exported/133200997/export-f2c770c82d134a0f4a4f56b1d39512d4-menu.scn
+res://Player/Player.tscn::0b42495aa010848fcd416b445bd83be7::1710315854::res://.godot/exported/133200997/export-48b487cb3fbab0e0d627d8f8de2ba1d9-Player.scn
+res://SaveZone/door_to_save.tscn::21b3d681804ed69ba60e71e90a1a1074::1710250453::res://.godot/exported/133200997/export-c02c902f567d61f6b05cfaee42419c2a-door_to_save.scn
+res://SaveZone/SaveZone.tscn::98ec813e8d83d2c9e1250a4fbecbf585::1710315854::res://.godot/exported/133200997/export-8acb23ca924a502508e58d2f982e84f8-SaveZone.scn
+res://Scenes/Basement.tscn::21f9b6f3f4f1b90b2d314e227e5c2aa6::1710315854::res://.godot/exported/133200997/export-22c42a2dadbd6f920e1f1b112a372889-Basement.scn
+res://Scenes/behind_lab.tscn::a097e88576994bdc2b6155beb26a0ab3::1710315854::res://.godot/exported/133200997/export-493298e629af79acd180accb0acc70d0-behind_lab.scn
+res://Scenes/lab.tscn::09a4eb2dc42806e57e94837128a4c045::1710315854::res://.godot/exported/133200997/export-9c1b6cc4e7db77241faae8754d22990c-lab.scn
+res://Scenes/tileset.tres::5ddd3692f2551befacd9181d413fb714::1710315691::res://.godot/exported/133200997/export-ff4caf8cbc415f92af6e5fb6df935480-tileset.res
